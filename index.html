@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Watch Store</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:black;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+}
+
+.hero{
+height:350px;
+background:url("images/watch1.jpg") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:40px;
+font-weight:bold;
+}
+
+.products{
+padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.price{
+font-size:20px;
+color:#e63946;
+}
+
+button{
+background:black;
+color:white;
+border:none;
+padding:10px 15px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#333;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Luxury Watches</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#">Shop</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+Premium Watch Collection
+</section>
+
+<section class="products">
+
+<div class="card">
+<img src="images/watch1.jpg">
+<h3>Skeleton Luxury Watch</h3>
+<p class="price">$49</p>
+<button onclick="addCart()">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="images/watch2.jpg">
+<h3>Classic Silver Watch</h3>
+<p class="price">$59</p>
+<button onclick="addCart()">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="images/watch3.jpg">
+<h3>Modern Black Watch</h3>
+<p class="price">$69</p>
+<button onclick="addCart()">Add to Cart</button>
+</div>
+
+</section>
+
+<footer>
+© 2026 Luxury Watch Store
+</footer>
+
+<script>
+function addCart(){
+alert("Product added to cart");
+}
+</script>
+
+</body>
+</html>
