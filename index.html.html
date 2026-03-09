@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Luxury Watch Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Luxury Watch</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#products">Watches</a>
+<a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Premium Watches Collection</h2>
+<p>Elegance. Precision. Luxury.</p>
+<button onclick="scrollToProducts()">Shop Now</button>
+</section>
+
+<section id="products" class="product-section">
+
+<h2>Our Watches</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314">
+<h3>Rolex Classic</h3>
+<p>$500</p>
+<button onclick="addToCart('Rolex Classic',500)">Add to Cart</button>
+<button onclick="showDetails('Rolex Classic','Premium luxury watch','$500')">Details</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa">
+<h3>Omega Silver</h3>
+<p>$420</p>
+<button onclick="addToCart('Omega Silver',420)">Add to Cart</button>
+<button onclick="showDetails('Omega Silver','Elegant silver watch','$420')">Details</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d">
+<h3>Royal Gold</h3>
+<p>$650</p>
+<button onclick="addToCart('Royal Gold',650)">Add to Cart</button>
+<button onclick="showDetails('Royal Gold','Gold premium watch','$650')">Details</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="cart" class="cart-section">
+
+<h2>Your Cart</h2>
+
+<ul id="cart-items"></ul>
+
+<h3>Total: $<span id="total">0</span></h3>
+
+<button onclick="checkout()">Checkout</button>
+
+</section>
+
+
+<div id="popup" class="popup">
+<div class="popup-content">
+<span onclick="closePopup()">X</span>
+<h2 id="p-title"></h2>
+<p id="p-desc"></p>
+<p id="p-price"></p>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
